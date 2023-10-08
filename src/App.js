@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Pages/Header';
+import RestaurantCard from './Pages/Restaurant';
+import User from './Pages/User';
+import UserClass from './Pages/UserClass';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <RestaurantCard/>
+      <User name = {"Ashutosh Mishra (function)"} age = {"22"}/>
+      <UserClass name = {"Ashutosh Mishra(class)"} age = {"22"}/>
     </div>
   );
 }
